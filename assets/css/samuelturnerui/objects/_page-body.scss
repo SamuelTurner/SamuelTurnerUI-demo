@@ -5,5 +5,5 @@
  * The main wrapper for the page body
  */
 .page-body {
-	padding: $base-spacing-unit;
+	padding: $base-spacing-unit $base-spacing-unit 0 $base-spacing-unit;
 }

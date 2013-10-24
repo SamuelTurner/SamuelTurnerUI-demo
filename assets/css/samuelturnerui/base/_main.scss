@@ -7,9 +7,3 @@
 body {
 	background-color: $background-color-1;
 }
-
-p{
-	&:last-of-type {
-		margin-bottom: 0;
-	}
-}

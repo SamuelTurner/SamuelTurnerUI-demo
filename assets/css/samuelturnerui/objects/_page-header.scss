@@ -22,4 +22,13 @@
 .page-header__nav {
 	@extend .nav;
 	float: right;
+	
+	a {
+		color: #fff;
+		text-decoration: none;
+		
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 }
