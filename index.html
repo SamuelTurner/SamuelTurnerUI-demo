@@ -42,7 +42,7 @@
 						
 						<h1>Introduction</h1>
 						
-						<div class="module emphasis">
+						<div class="module info">
 							<p>The elements contained within this UI framework are largely based upon <a href="http://www.cs.tut.fi/~jkorpela/www/testel.html">this example page</a>.</p>
 						</div><!-- Closing: module emphasis -->
 						
@@ -248,11 +248,11 @@
 								
 								<div class="form-row">
 									
-									<button id="but" type="submit" name="foo" value="bar" class="btn btn--small btn--positive">Button</button>
+									<button id="but" type="submit" name="foo" value="bar" class="btn btn--small btn--positive inline-item">Button</button>
 									
-									<input id="f0" type="reset" name="reset" value="Reset" class="btn btn--small btn--negative" />
+									<input id="f0" type="reset" name="reset" value="Reset" class="btn btn--small btn--negative inline-item" />
 									
-									<input id="f99" type="submit" name="submit" value="Just a test" class="btn btn--small btn--positive" />
+									<input id="f99" type="submit" name="submit" value="Just a test" class="btn btn--small btn--positive inline-item" />
 									
 								</div><!-- Closing: form-row -->
 								
@@ -262,18 +262,36 @@
 								
 								<div class="form-row">
 									
-									<label for="f1" class="inline-item inline-label">Single-line text input field:</label>
+									<label for="f1" class="inline-item inline-label">Inline single-line text input field</label>
 									<input id="f1" name="text" size="20" value="Default text." class="inline-item" type="text" />
 									
 								</div><!-- Closing: form-row -->
 								
+								<div class="form-row">
+									
+									<label for="f1" class="inline-label">Inline single-line select field</label>
+									<select id="f11" name="select2" class="inline-item">
+										<option>one</option>
+										<option selected>two (default)</option>
+										<option>three</option>
+									</select>
+									
+								</div><!-- Closing: form-row -->
+								
+								<div class="form-row">
+									
+									<label for="f2" class="inline-label">Inline multi-line text input field (textarea)</label>
+									<textarea id="f2" name="textarea" rows="2" cols="20" class="inline-item">Default text.</textarea>
+									
+								</div><!-- Closing: form-row -->
+								
 							</div><!-- Closing: form-row-wrapper -->
 							
 							<div class="form-row-wrapper">
 								
 								<div class="form-row">
 									
-									<label for="f2">Multi-line text input field (textarea):</label>
+									<label for="f2">Multi-line text input field (textarea)</label>
 									<textarea id="f2" name="textarea" rows="2" cols="20">Default text.</textarea>
 									
 								</div><!-- Closing: form-row -->
@@ -287,36 +305,36 @@
 									The following two radio buttons are inside a <code>fieldset</code> element with a <code>legend</code>:
 									<fieldset>
 										<legend>Legend</legend>
-										<div>
+										<div class="form-row">
 											<input id="f3" type="radio" name="radio" value="1" class="inline-item" />
 											<label for="f3" class="inline-item">Radio button 1</label>
 										</div>
-										<div>
+										<div class="form-row">
 											<input id="f4" type="radio" name="radio" value="2" checked class="inline-item" />
 											<label for="f4" class="inline-item">Radio button 2 (initially checked)</label>
 										</div>
 									</fieldset>
 									<fieldset>
 										<legend>Check those that apply</legend>
-										<div>
+										<div class="form-row">
 											<input id="f5" type="checkbox" name="checkbox" class="inline-item" />
 											<label for="f5" class="inline-item">Checkbox 1</label>
 										</div>
-										<div>
+										<div class="form-row">
 											<input id="f6" type="checkbox" name="checkbox2" checked class="inline-item" />
 											<label for="f6" class="inline-item">Checkbox 2 (initially checked)</label>
 										</div>
 									</fieldset>
-									
+										
 								</div><!-- Closing: form-row -->
-								
+							
 							</div><!-- Closing: form-row-wrapper -->
 							
 							<div class="form-row-wrapper">
 								
 								<div class="form-row">
 									
-									<label for="f10" class="inline-item">A <code>select</code> element with <code>size="1"</code> (dropdown box):</label>
+									<label for="f10" class="inline-label">A <code>select</code> element with <code>size="1"</code> (dropdown box)</label>
 									<select id="f10" name="select1" size="1" class="inline-item">
 										<option>one</option>
 										<option selected>two (default)</option>
@@ -330,7 +348,7 @@
 							<div class="form-row-wrapper">
 								
 								<div class="form-row">
-									<label for="f11">A <code>select</code> element with <code>size="3"</code> (listbox):</label>
+									<label for="f11">A <code>select</code> element with <code>size="3"</code> (listbox)</label>
 									<select id="f11" name="select2" size="3">
 										<option>one</option>
 										<option selected>two (default)</option>
@@ -340,14 +358,6 @@
 								
 							</div><!-- Closing: form-row-wrapper -->
 							
-							
-
-							<div>
-							</div>
-							<div>
-							</div>
-							<div>
-							</div>
 						</form>
 						
 					</div><!-- Closing: module -->
@@ -355,6 +365,84 @@
 				</div><!-- Closing: grid__item one-half -->
 				
 			</div><!-- Closing: grid -->
+			
+			<div class="grid">
+				
+				<div class="grid__item one-third">
+					
+					<div class="module">
+						
+						<h1>Modules</h1>
+						
+						<p>Modules can be easily nested and given different styles. Here is an info module nested inside an error module.</p>
+						
+						<div class="module error">
+							
+							<h3>You have made a mistake!</h3>
+							
+							<div class="module info">
+								
+								<p>But here is some information about it</p>
+								
+							</div><!-- Closing: module info -->
+							
+						</div><!-- Closing: module error -->
+						
+					</div><!-- Closing: module -->
+						
+				</div><!-- Closing: grid__item one-third -->
+				
+				<div class="grid__item one-third">
+					
+					<div class="module">
+						
+						<h1>Errors</h1>
+						
+						<p>Errors can be added to almost any wrapper-like element. So far only form-row and module are supported though.</p>
+						
+						<h2>Form-Row Error</h2>
+						
+						<p>Used primarily for marking validation errors in forms</p>
+						
+						<form>
+							
+							<div class="form-row-wrapper">
+								
+								<div class="form-row error">
+									
+									<span class="error__message">Please enter your name</span>
+									
+									<label for="name" class="inline-item inline-label">Name</label>
+									<input id="name" name="name" class="inline-item" type="text" />
+									
+								</div><!-- Closing: form-row -->
+								
+							</div><!-- Closing: form-row-wrapper -->
+							
+						</form>
+						
+						<h2>Module Error</h2>
+						
+						<div class="module error">
+							
+							<h3>Error Summary</h3>
+							
+							<p>A common use for an error module is to summarise the errors on the page or form</p>
+							
+							<ul>
+								<li>Error 1</li>
+								<li>Error 2</li>
+								<li>Error 3</li>
+							</ul>
+							
+						</div><!-- Closing: module error -->
+						
+					</div><!-- Closing: module -->
+						
+				</div><!-- Closing: grid__item one-third -->
+				
+			</div><!-- Closing: grid -->
+			
 			
 		</div><!-- Closing: page-body -->
 		

@@ -10,24 +10,24 @@
 	padding: $base-spacing-unit $base-spacing-unit 0 $base-spacing-unit;
 	margin-bottom: $base-spacing-unit;
 	
-	&.emphasis {
-		background-color: $background-color-3;
+	&.error {
+		background-color: $error-background-color-1;
 		color: $font-color-2;
-		padding-left: #{$base-spacing-unit + 50px};
-		position: relative;
+		padding-left: #{$half-spacing-unit + $kilo-size + $half-spacing-unit};
 		
 		&:before {
-			position: absolute;
-			top: $half-spacing-unit;
-			left: $base-spacing-unit;
-			
-			line-height: 1;
-			content: "!";
 			font-size: $kilo-size;
-			font-weight: bold;
-			color: $brand-color-2;
 		}
-		
 	}
 	
+	&.info {
+		background-color: $info-background-color-1;
+		color: $font-color-2;
+		padding-left: #{$half-spacing-unit + $kilo-size + $half-spacing-unit};
+		
+		&:before {
+			font-size: $kilo-size;
+		}
+	}
+
 }

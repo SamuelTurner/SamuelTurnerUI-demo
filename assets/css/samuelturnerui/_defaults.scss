@@ -1,0 +1,40 @@
+/*------------------------------------*\
+    DEFAULTS
+\*------------------------------------*/
+/**
+ * Some more default variables. Redefine these in your `_vars.scss` file (found
+ * in the inuit.css-web-template) to override them.
+ */
+
+/* Brand fonts */
+$brand-font-1: pacificoregular,Calibri,Arial,Helvetica,sans-serif;
+
+/* Brand colours */
+$brand-color-1: #582770;
+$brand-color-2: #773D94;
+
+/* Font colours */
+$font-color-1: #666;
+$font-color-2: #fff;
+
+/* Background colours */
+$background-color-1: #e9e9e9;
+$background-color-2: #fff;
+$background-color-3: #996eaf;
+
+/* Error colours */
+$error-background-color-1: #c44856;
+$error-color-1: #B00B1E;
+
+/* Info colours */
+$info-background-color-1: #5680f2;
+$info-color-1: #1E55EE;
+
+/* Border radius */
+$border-radius-1: 6px;
+
+/* Border color */
+$border-color-1 : #999;
+
+/* Quarter spacing unit */
+$quarter-spacing-unit: $base-spacing-unit / 4;

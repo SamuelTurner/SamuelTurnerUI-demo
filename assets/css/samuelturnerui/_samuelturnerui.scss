@@ -30,6 +30,7 @@
  */
 
 /* Generic */
+@import "defaults";
 @import "generic/shared";
 @import "generic/fonts";
 
@@ -37,6 +38,8 @@
 @import "base/mixins";
 @import "base/main";
 @import "base/forms";
+@import "base/errors";
+@import "base/info";
 
 /* Objects */
 @import "objects/beautons";

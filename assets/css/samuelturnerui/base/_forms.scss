@@ -2,7 +2,32 @@
     FORMS
 \*------------------------------------*/
 /**
- * Elements
+ * Shared element positioning and spacing
+ */
+.form-row input,
+.form-row select,
+.form-row textarea,
+.form-row fieldset,
+.form-row label,
+.form-row .label,
+.form-row .btn {
+	display: block;
+	margin-bottom: $half-spacing-unit;
+}
+
+.form-row fieldset {
+	input,
+	select,
+	textarea,
+	label,
+	.label,
+	.btn {
+		margin-bottom: 0;	
+	}
+}
+
+/**
+ * Shared element styling
  */
 input[type=text],
 input[type=password],
@@ -20,10 +45,20 @@ input[type=email],
 select,
 textarea {
 	padding: 5px;
+	width: 250px;
 }
 
-label {
-	padding: 5px 0;
+/**
+ * Form elements
+ */
+fieldset {
+	padding-top: $half-spacing-unit;
+	padding-bottom: $half-spacing-unit;	
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+	margin-right: $half-spacing-unit;
 }
 
 /**
@@ -35,20 +70,23 @@ label {
 	display: block;
 }
 
-.form-row {
-	margin: $half-spacing-unit;
+.form-row-wrapper {
+	margin-bottom: $half-spacing-unit;	
 }
 
 /**
  * Inline Items (make any items with the class in a form-row appear in a line)
  */
 .form-row {
-	.inline-item {
-		display: inline-block;
-	}
-	
+	.inline-item,
 	.inline-label {
-		width: 250px;
+		display: inline-block;
+		vertical-align: middle;
+	}
+		
+	.inline-label {
+		width: 175px;
 		text-align: right;
+		margin-right: $half-spacing-unit;
 	}
 }
