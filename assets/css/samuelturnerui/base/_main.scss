@@ -4,6 +4,10 @@
 /**
  * Blanket styles that can't be abstracted
  */
+html {
+	color: #333;
+}
+
 body {
 	background-color: $background-color-1;
 }
