@@ -90,3 +90,21 @@ input[type="checkbox"] {
 		margin-right: $half-spacing-unit;
 	}
 }
+
+/**
+ * Mobile stuff
+ */
+@include media-query(palm){
+	.form-row {
+		.inline-item,
+		.inline-label {
+			display: block;
+		}
+			
+		.inline-label {
+			width: auto;
+			text-align: left;
+			margin-right: 0;
+		}
+	}
+}

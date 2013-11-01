@@ -58,8 +58,9 @@ $use-greybox:       false;
 /**
  * Place any variables that should override inuit.css’ defaults here.
  */
-/* Base font */
-$base-font-family: merriweather_sansregular, asapregular,Calibri,Arial,Helvetica,sans-serif;
+$base-font-family:	merriweather_sansregular, asapregular,Calibri,Arial,Helvetica,sans-serif;
+$responsive: 		true;
+$lap-start:         641px;
 
 
 
@@ -69,3 +70,9 @@ $base-font-family: merriweather_sansregular, asapregular,Calibri,Arial,Helvetica
 /**
  * Place any of your own variables that sit on top of inuit.css here.
  */
+/* Objects & Abstractions */
+$use-modules: 		true;
+$use-page:			true;
+$use-page-header:	true;
+$use-page-body:		true;
+$use-page-footer:	true;
