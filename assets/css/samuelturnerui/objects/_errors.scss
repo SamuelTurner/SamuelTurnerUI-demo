@@ -1,15 +1,16 @@
-/*------------------------------------*\
-    INFO
-\*------------------------------------*/
-/* Base styles for an block of information which can be added to form-rows, paragraphs etc. Extended in _module.scss */
+@if $use-errors == true{
 
-.info {
+/*------------------------------------*\
+    ERRORS
+\*------------------------------------*/
+/* Base styles for errors which can be added to form-rows, paragraphs etc. Extended in _module.scss */
+.error {
 	position: relative;
 	padding: $half-spacing-unit $half-spacing-unit 0 $half-spacing-unit;
 	padding-left: #{$half-spacing-unit + $h1-size + $half-spacing-unit};
 	margin-bottom: $half-spacing-unit;
 	
-	background-color: $info-background-color-1;
+	background-color: $error-background-color-1;
 	color: $font-color-2;
 	
 	&:before {
@@ -18,10 +19,10 @@
 		left: $base-spacing-unit;
 		
 		line-height: 1;
-		content: "i";
+		content: "!";
 		font-size: $h1-size;
 		font-weight: bold;
-		color: $info-color-1;
+		color: $error-color-1;
 	}
 	
 	.error__message {
@@ -30,7 +31,9 @@
 		margin-bottom: $half-spacing-unit;
 		
 		text-align: center;
-		background-color: $info-color-1;
+		background-color: $error-color-1;
 	}
 	
+}
+
 }

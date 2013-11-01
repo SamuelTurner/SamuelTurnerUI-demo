@@ -39,10 +39,10 @@
 @import "base/main";
 @import "base/headings";
 @import "base/forms";
-@import "base/errors";
-@import "base/info";
 
 /* Objects */
+@import "objects/errors";
+@import "objects/info";
 @import "objects/beautons";
 @import "objects/page";
 @import "objects/page-header";

@@ -12,6 +12,7 @@
 	padding: $base-spacing-unit $base-spacing-unit 0 $base-spacing-unit;
 	margin-bottom: $base-spacing-unit;
 	
+	@if $use-errors == true {
 	&.error {
 		background-color: $error-background-color-1;
 		color: $font-color-2;
@@ -21,7 +22,9 @@
 			font-size: $kilo-size;
 		}
 	}
+	}
 	
+	@if $use-info == true {
 	&.info {
 		background-color: $info-background-color-1;
 		color: $font-color-2;
@@ -30,6 +33,7 @@
 		&:before {
 			font-size: $kilo-size;
 		}
+	}
 	}
 
 }
