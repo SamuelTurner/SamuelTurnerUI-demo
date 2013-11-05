@@ -14,11 +14,19 @@
 	
 	<script type="text/javascript" src="assets/js/samuelturnerui/jquery/jquery-2.0.3.min.js" ></script>
 	
+	<script type="text/javascript" src="assets/js/samuelturnerui/clingy-footer/clingy-footer-1.2.0.min.js" ></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(document).clingyFooter();
+		});
+	</script>
+	
 </head>
 
 <body>
 	
-	<div class="page">
+	<div class="page" id="page">
 		
 		<div class="page-header">
 			
@@ -34,7 +42,7 @@
 			
 		</div><!-- Closing: page-header -->
 		
-		<div class="page-body">
+		<div class="page-body" id="page-body">
 			
 			<div class="grid">
 				
@@ -445,10 +453,9 @@
 				
 			</div><!-- Closing: grid -->
 			
-			
 		</div><!-- Closing: page-body -->
 		
-		<div class="page-footer">
+		<div class="page-footer" id="page-footer">
 			
 			&copy; <a href="http://samuel-turner.co.uk">Samuel-Turner.co.uk</a>
 			
