@@ -37,6 +37,8 @@
 	line-height: 1;
 }
 
+@if $use-nav == true {
+
 .page-header__nav {
 	@extend .nav;
 	
@@ -47,6 +49,14 @@
 	a {
 		color: #fff;
 	}
+}
+
+.page-header__menu-icon {
+	@include menu-icon($h1-size, $font-color-2);
+	float: right;
+	display: hidden;
+}
+
 }
 
 /**
@@ -66,10 +76,7 @@
 		margin-bottom: $half-spacing-unit;
 	}
 	
-	.page-header__menu-icon {
-		@include menu-icon($h1-size, $font-color-2);
-		float: right;
-	}
+	@if $use-nav == true {
 	
 	.page-header__nav {
 		float: none;
@@ -84,6 +91,12 @@
 				margin-bottom: 0;
 			}
 		}
+	}
+	
+	.page-header__menu-icon {
+		display: block;
+	}
+	
 	}
 }
 
