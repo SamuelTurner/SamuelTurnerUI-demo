@@ -33,9 +33,10 @@
 @import "defaults";
 @import "generic/shared";
 @import "generic/fonts";
+@import "generic/mixins";
+@import "generic/helper";
 
 /* Base */
-@import "base/mixins";
 @import "base/main";
 @import "base/headings";
 @import "base/forms";
@@ -43,6 +44,7 @@
 /* Objects */
 @import "objects/errors";
 @import "objects/info";
+@import "objects/nav";
 @import "objects/beautons";
 @import "objects/page";
 @import "objects/page-header";

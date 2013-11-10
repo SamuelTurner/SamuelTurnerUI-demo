@@ -7,33 +7,45 @@
  * Header for the main page template
  */
 
-.page-header {
-	@extend .cf;
+.page-header-wrapper {
 	background-color: $brand-color-1;
 	border-bottom: 10px solid $brand-color-2;
 	color: $font-color-2;
+}
+
+.page-header {
+	@extend .cf;
+	min-width: $min-page-width;
+	max-width: $max-page-width;
 	padding: $base-spacing-unit $base-spacing-unit 0 $base-spacing-unit;
+	margin: 0 auto;
+}
+
+.page-header__top-bar {
+	@extend .cf;
+	display: block;
+	float: left;
 }
 
 .page-header__logo {
-	float: left;	font-family: $brand-font-1;
 	@include brand-text-shadow-1;
+	display: block;
+	float: left;
 	margin-bottom: $base-spacing-unit;
+	font-family: $brand-font-1;
+	font-size: $kilo-size;
+	line-height: 1;
 }
 
 .page-header__nav {
 	@extend .nav;
+	
+	color: #fff;
+	margin: $half-spacing-unit 0 $half-spacing-unit 0;
 	float: right;
-	margin-top: $half-spacing-unit;
 	
 	a {
 		color: #fff;
-		text-decoration: none;
-		margin-left: $half-spacing-unit;
-		
-		&:hover {
-			text-decoration: underline;
-		}
 	}
 }
 
@@ -41,16 +53,37 @@
  * Mobile stuff
  */
 @include media-query(palm){
-	.page-header__logo {
-		float: none;
-		text-align: center;
+	.page-header {
+		padding: $half-spacing-unit $half-spacing-unit 0 $half-spacing-unit;	
 	}
 	
+	.page-header__top-bar {
+		float: none;
+	}
+	
+	.page-header__logo {
+		margin-right: $half-spacing-unit;
+		margin-bottom: $half-spacing-unit;
+	}
+	
+	.page-header__menu-icon {
+		@include menu-icon($h1-size, $font-color-2);
+		float: right;
+	}
 	
 	.page-header__nav {
 		float: none;
-		display: block;
-		text-align: center;
+		margin-top: $quarter-spacing-unit;
+		
+		li {
+			background-color: $brand-color-2;
+			padding: $quarter-spacing-unit;
+			margin-bottom: $quarter-spacing-unit;
+			
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+		}
 	}
 }
 

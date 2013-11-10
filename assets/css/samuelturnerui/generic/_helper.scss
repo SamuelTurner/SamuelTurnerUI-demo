@@ -1,0 +1,43 @@
+/*------------------------------------*\
+    HELPER
+\*------------------------------------*/
+
+/* JS HIDE/SHOW */
+
+/* .no-js-hide hides an element when JS doesn't run,
+ * so gets replaced with .js-show when JS does run
+ */
+.no-js-hide {
+	display: none;
+}
+
+.js-show {
+	/* Nothing yet */
+}
+
+/* .no-js-show shows an element when JS doesn't run,
+ * so gets replaced with .js-hide when JS does run
+ */
+.no-js-show {
+	/* Nothing yet */
+}
+
+.js-hide {
+	display: none;
+}
+
+/* no-js-palm-show shows an element when JS doesn't
+ * run on palm size devices, so gets replaced with
+ * .js-mobile-hide when JS does run
+ */
+@media only screen and (min-width: $palm-end) {
+	.no-js-palm-show {
+		display: none; /* Hide for all resolutions above palm */
+	}
+}
+
+@include media-query(palm) {
+	.js-palm-hide {
+		display: none;
+	}
+}

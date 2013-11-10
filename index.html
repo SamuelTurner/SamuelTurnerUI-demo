@@ -12,15 +12,11 @@
 	
 	<link media="all" type="text/css" rel="stylesheet" href="assets/css/style.css">
 	
-	<script type="text/javascript" src="assets/js/samuelturnerui/jquery/jquery-2.0.3.min.js" ></script>
+	<script type="text/javascript" src="assets/js/jquery/jquery-2.0.3.min.js" ></script>
 	
-	<script type="text/javascript" src="assets/js/samuelturnerui/clingy-footer/clingy-footer-1.2.0.min.js" ></script>
+	<script type="text/javascript" src="assets/js/clingy-footer/clingy-footer-1.2.0.min.js" ></script>
 	
-	<script type="text/javascript">
-		$(document).ready(function(){
-			$(document).clingyFooter();
-		});
-	</script>
+	<script type="text/javascript" src="assets/js/samuelturnerui/samuelturnerui.min.js" ></script>
 	
 </head>
 
@@ -28,19 +24,27 @@
 	
 	<div class="page" id="page">
 		
-		<div class="page-header">
+		<div class="page-header-wrapper">
 			
-			<div class="page-header__logo">
-				<span class="kilo">SamuelTurnerUI</span>
-			</div><!-- Closing: page-header__logo -->
+			<div class="page-header">
+				
+				<div class="page-header__top-bar">
+					
+					<div class="page-header__logo">SamuelTurnerUI</div>
+					
+					<span class="page-header__menu-icon no-js-hide"></span>
+					
+				</div><!-- Closing: page-header__top-bar -->
+					
+				<ul class="page-header__nav no-js-palm-show">
+					<li><a href="">Home</a></li>
+					<li><a href="">About</a></li>
+					<li><a href="">Contact</a></li>
+				</ul>
+				
+			</div><!-- Closing: page-header -->
 			
-			<ul class="page-header__nav">
-				<li><a href="">Home</a></li>
-				<li><a href="">About</a></li>
-				<li><a href="">Contact</a></li>
-			</ul>
-			
-		</div><!-- Closing: page-header -->
+		</div><!-- Closing: page-header-wrapper -->
 		
 		<div class="page-body" id="page-body">
 			
@@ -455,11 +459,15 @@
 			
 		</div><!-- Closing: page-body -->
 		
-		<div class="page-footer" id="page-footer">
+		<div class="page-footer-wrapper" id="page-footer-wrapper">
 			
-			&copy; <a href="http://samuel-turner.co.uk">Samuel-Turner.co.uk</a>
+			<div class="page-footer">
+				
+				&copy; <a href="http://samuel-turner.co.uk">Samuel-Turner.co.uk</a>
+				
+			</div><!-- Closing: page-footer -->
 			
-		</div><!-- Closing: page-footer -->
+		</div><!-- Closing: page-footer-wrapper -->
 			
 	</div><!-- Closing: page -->
 	
