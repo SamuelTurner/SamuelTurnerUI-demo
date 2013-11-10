@@ -54,7 +54,8 @@
 .page-header__menu-icon {
 	@include menu-icon($h1-size, $font-color-2);
 	float: right;
-	display: hidden;
+	display: none;
+	margin: $quarter-spacing-unit;
 }
 
 }
