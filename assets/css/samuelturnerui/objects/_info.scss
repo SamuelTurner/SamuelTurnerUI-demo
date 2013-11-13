@@ -7,8 +7,7 @@
 
 .info {
 	position: relative;
-	padding: $half-spacing-unit $half-spacing-unit 0 $half-spacing-unit;
-	padding-left: #{$half-spacing-unit + $h1-size + $half-spacing-unit};
+	padding: $half-spacing-unit $half-spacing-unit $half-spacing-unit #{$half-spacing-unit + $h1-size + $half-spacing-unit};
 	margin-bottom: $half-spacing-unit;
 	
 	background-color: $info-background-color-1;
