@@ -7,35 +7,35 @@
  */
 
 /* Brand fonts */
-$brand-font-1: 'pacificoregular','Arial',sans-serif;
-$brand-font-2: 'merriweather_sansbold','Arial Black',sans-serif;
+$brand-font-1: 'pacificoregular','Arial',sans-serif!default;
+$brand-font-2: 'merriweather_sansbold','Arial Black',sans-serif!default;
 
 /* Brand colours */
-$brand-color-1: #582770;
-$brand-color-2: #773D94;
+$brand-color-1: #582770!default;
+$brand-color-2: #773D94!default;
 
 /* Font colours */
-$font-color-1: #666;
-$font-color-2: #fff;
+$font-color-1: #666!default;
+$font-color-2: #fff!default;
 
 /* Background colours */
-$background-color-1: #e9e9e9;
-$background-color-2: #fff;
-$background-color-3: #996eaf;
+$background-color-1: #e9e9e9!default;
+$background-color-2: #fff!default;
+$background-color-3: #996eaf!default;
 
 /* Error colours */
-$error-background-color-1: #c85461;
-$error-color-1: #B00B1E;
+$error-background-color-1: #c85461!default;
+$error-color-1: #B00B1E!default;
 
 /* Info colours */
-$info-background-color-1: #7c9ef8;
-$info-color-1: #1E55EE;
+$info-background-color-1: #7c9ef8!default;
+$info-color-1: #1E55EE!default;
 
 /* Border radius */
-$border-radius-1: 6px;
+$border-radius-1: 6px!default;
 
 /* Border color */
-$border-color-1 : #999;
+$border-color-1 : #999!default;
 
 /* Quarter spacing unit */
-$quarter-spacing-unit: $base-spacing-unit / 4;
+$quarter-spacing-unit: $base-spacing-unit / 4!default;
