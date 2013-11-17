@@ -35,6 +35,15 @@
 	font-family: $brand-font-1;
 	font-size: $kilo-size;
 	line-height: 1;
+	
+	a,
+	a:visited,
+	a:hover,
+	a:active {
+		color: #FFFFFF;
+		text-decoration: none;
+	}
+	
 }
 
 @if $use-nav == true {
