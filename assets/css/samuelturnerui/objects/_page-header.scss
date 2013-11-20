@@ -85,6 +85,7 @@
 	.page-header__logo {
 		margin-right: $half-spacing-unit;
 		margin-bottom: $half-spacing-unit;
+		font-size: $h1-size;
 	}
 	
 	@if $use-nav == true {
@@ -95,8 +96,12 @@
 		
 		li {
 			background-color: $brand-color-2;
-			padding: $quarter-spacing-unit;
 			margin-bottom: $quarter-spacing-unit;
+			
+			a {
+				padding: $quarter-spacing-unit;
+				margin-right: 0;
+			}
 			
 			&:last-of-type {
 				margin-bottom: 0;
