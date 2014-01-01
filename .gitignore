@@ -215,7 +215,4 @@ pip-log.txt
 .mr.developer.cfg
 
 .sass-cache
-inuit.css
-style.css
-style.min.css
-*.bat
+

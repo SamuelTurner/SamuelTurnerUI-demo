@@ -1,0 +1,12 @@
+[submodule "assets/SamuelTurnerUI"]
+	path = assets/SamuelTurnerUI
+	url = git@github.com:SamuelTurner/SamuelTurnerUI
+[submodule "assets/Clingy-Footer"]
+	path = assets/Clingy-Footer
+	url = git@github.com:SamuelTurner/Clingy-Footer
+[submodule "assets/SimpleJSMinifier"]
+	path = assets/SimpleJSMinifier
+	url = git@github.com:SamuelTurner/SimpleJSMinifier
+[submodule "assets/inuit.css"]
+	path = assets/inuit.css
+	url = git@github.com:csswizardry/inuit.css
